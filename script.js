@@ -38,4 +38,10 @@ form.addEventListener("submit", function (e) {
 
   // Ajouter le nouveau commentaire à la liste
   commentList.appendChild(newComment);
+
+  // Supprimer le contenu des champs du formulaire
+  form.reset();
+
+  // Cacher le message d'erreur qui est passé en "block"
+  errorMessage.style.display = "none";
 });
